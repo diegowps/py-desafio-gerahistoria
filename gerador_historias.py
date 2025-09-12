@@ -80,5 +80,6 @@ if tema_escolhido in livro_de_hisorias:
     print(historia)
 else:
     print("Desculpe, esse tema não está disponível. Por favor, escolha entre: fantasia, aventura, amor não correspondido, comédia.")
-    
+
 #-- Fim do gerador de histórias --
+#>>>
