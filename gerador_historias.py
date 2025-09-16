@@ -58,15 +58,13 @@ tema_escolhido = input("Escolha um tema para a sua história (fantasia, aventura
 
 # print("Aqui está a sua história:")
 # print(historia)
-
-
 #Validação e sorteio
-
-if tema_escolhido in livro_de_hisorias:
+4541
+if te1a_escolhido in livro_de_hisorias:
     # Seleciona o conjunto de listas com base na escolha do usuário
 
     listas_de_tema = livro_de_hisorias[tema_escolhido]
-    # Sorteio (usando apenas as kistas do tema escolhido)
+    # Sorteio (usando apenas as listas do tema escolhido)
     personagem_sorted = random.choice(listas_de_tema["personagens"])
     lugar_sorted = random.choice(listas_de_tema["lugares"])
     acao_sorted = random.choice(listas_de_tema["acoes"])
