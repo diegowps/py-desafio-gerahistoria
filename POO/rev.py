@@ -48,11 +48,38 @@ print("\n--- Status dos Monstros ---")
 zumbi.atacar()
 ogro.atacar()
 
-"No nosso jogo, teremos Zumbis, Esqueletos e Aranhas. 
-Eles têm coisas em comum (vida, força) e coisas diferentes (Zumbi 
-morde, Esqueleto atira flecha). Como evitamos copiar
 
-e colar código?"
+# O Jogo Completo!
 
-Introdução da analogia: Herança = Genética 
-(Filhos herdam características dos pais).
+# Missão: Unir todas as classes criadas (Jogador, Monstro e suas 
+# filhas, Batalha, Inventario). Criar um script principal que:
+# Cria um objeto Jogador.
+# Cria um objeto Zumbi.
+# Inicia uma Batalha entre eles.
+# Usa um loop while para continuar os turnos até a vida de alguém 
+# chegar a zero.
+# No final, se o jogador vencer, ele adiciona "Essência de Zumbi" 
+# ao seu inventário.
+
+
+# Git e GitHub: Mostrando seu Trabalho para o Mundo
+
+# Criar uma pasta para o projeto.
+# git init - Explicar o que acontece.
+# git add . - Explicar a "Staging Area".
+# git commit -m "Versão inicial do jogo de batalha" - Explicar o commit.
+# Acessar o GitHub, criar um novo repositório.
+# Copiar e colar os comandos para conectar o repositório local ao remoto.
+# git push -u origin main - Explicar o que o "push" faz.
+# Missão Final: "Cada um de vocês deve seguir esses passos para publicar o seu jogo no seu próprio GitHub!"
+
+class Batalha:
+    def __init__(self, jogador, monstro):
+        self.jogador = jogador
+        self.monstro = monstro
+
+    def iniciar_turno(self):
+        # Toda a lógica complexa está escondida aqui dentro!
+        self.jogador.atacar(self.monstro)
+        if self.monstro.vida > 0:
+            self.monstro.atacar(self.jogador)
